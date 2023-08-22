@@ -9,11 +9,11 @@ getNotes().forEach((note) => {
 addNoteButton.addEventListener("click", () => addNote());
 
 function getNotes() {
-  return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
+  return JSON.parse(localStorage.getItem("Ajinkya-notes") || "[]");
 }
 
 function saveNotes(notes) {
-  localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
+  localStorage.setItem("Ajinkya-notes", JSON.stringify(notes));
 }
 
 function createNoteElement(id, content) {
